@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #ffffff;
-    color: #181E4B;
+    background-color: #1e1b1b;
+    color: #f8f9fa;
     overflow-x: hidden;
     line-height: 1.6;
 }
@@ -29,6 +29,7 @@ body {
     font-size: 24px;
 }
 
+
 .logo-icon {
     background: #4475F2;
     color: white;
@@ -44,11 +45,12 @@ body {
 .menu {
     display: flex;
     gap: 30px;
-    
+
 }
+
 .menu a {
     text-decoration: none;
-    color: #181E4B;
+    color: #ffffff;
     font-weight: 500;
     transition: 0.3s;
 }
@@ -67,6 +69,7 @@ body {
     cursor: pointer;
     font-weight: 600;
     transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(68, 117, 242, 0.2);
 }
 
 
@@ -82,4 +85,206 @@ body {
 .menu-content {
     flex: 1;
     max-width: 600px;
+}
+
+.menu-content h1 {
+    font-size: clamp(32px, 5vw, 54px);
+
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #4475F2;
+}
+
+.menu-content p {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background: #4475F2;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(68, 117, 242, 0.2);
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+
+.gambar {
+    flex: 1;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-gambar {
+    position: absolute;
+    width: 80%;
+    height: 90%;
+    background: #4475F2;
+    border-radius: 40px 150px 40px 40px;
+    z-index: -1;
+    top: 20px;
+    right: 0;
+    box-shadow: 0 10px 200px rgba(68, 117, 242, 0.2);
+}
+
+.book {
+    position: absolute;
+    width: 140px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    transition: 0.4s ease;
+}
+
+.book:hover {
+    transform: translateY(-100px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.btn-login:hover {
+    transform: translateX(100px 50px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+
+.book-1 {
+    top: 10%;
+    left: 10%;
+    transform: rotate(-10deg);
+}
+
+.book-2 {
+    top: 5%;
+    right: 15%;
+    transform: rotate(8deg);
+}
+
+.book-3 {
+    bottom: 15%;
+    left: 20%;
+    transform: rotate(-5deg);
+    z-index: 2;
+}
+
+.book-4 {
+    bottom: 10%;
+    right: 5%;
+    transform: rotate(12deg);
+}
+
+.fitur {
+    background-color: #1e1b1b;
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.fitur-header h2 {
+    font-size: 32px;
+    margin: 10px 0 50px;
+}
+
+.fitur-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+}
+
+.fitur-card {
+    background: #4475f2;
+    color: rgb(245, 245, 245);
+    padding: 40px;
+    border-radius: 25px;
+    text-align: left;
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(68, 117, 242, 0.2);
+}
+
+.fitur-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.fitur-grid h2 {
+    text-align: center;
+    padding: 10px;
+
+}
+
+.footer-bottom {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.tag span {
+    font: bold;
+}
+
+
+
+
+@media (max-width: 992px) {
+    .container {
+        padding: 20px 5%;
+    }
+
+    .menu2 {
+        flex-direction: column;
+
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .menu-content {
+        order: 1;
+        margin-bottom: 40px;
+    }
+
+    .gambar {
+        order: 2;
+        height: 400px;
+        transform: scale(0.9);
+    }
+}
+
+
+@media (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-content h1 {
+        font-size: 28px;
+    }
+
+    .gambar {
+        transform: scale(0.75);
+        height: 350px;
+    }
+
+    .book {
+        width: 110px;
+        height: 160px;
+    }
 }
