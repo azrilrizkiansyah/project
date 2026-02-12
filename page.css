@@ -44,4 +44,42 @@ body {
 .menu {
     display: flex;
     gap: 30px;
+    
+}
+.menu a {
+    text-decoration: none;
+    color: #181E4B;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu a.active,
+.menu a:hover {
+    color: #4475F2;
+}
+
+.btn-login {
+    background: #4475F2;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+
+.menu2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 8% 100px;
+    gap: 50px;
+    min-height: 80vh;
+}
+
+.menu-content {
+    flex: 1;
+    max-width: 600px;
 }
