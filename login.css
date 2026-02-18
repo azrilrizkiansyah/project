@@ -1,0 +1,25 @@
+/* Mengatur font dan reset margin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:  #1e1b1b; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login{
+    background-color: #4475F2;
+    width: 100%;
+    padding: 40px;
+    max-width: 400px;
+    border-radius: 15px;
+  
+}
+.input-group{
+   
+}
