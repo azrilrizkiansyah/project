@@ -1,25 +1,118 @@
-/* Mengatur font dan reset margin */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background:  #1e1b1b; 
+
+    background-color: #1e1b1b;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+
 }
-.login{
-    background-color: #4475F2;
-    width: 100%;
+
+.login {
+    margin-top: 15px;
+    background-color: #1a73e8;
     padding: 40px;
-    max-width: 400px;
-    border-radius: 15px;
-  
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(68, 117, 242, 0.3);
+    max-width: 450pxpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.8s ease forwards;
 }
-.input-group{
-   
+
+.login-form h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.input-group {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+input {
+    width: 350px;
+    height: 45px;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+
+
+.button {
+    display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 6px;
+    margin-top: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #000dff;
+    color: #ffffff;
+}
+
+button.button {
+    background-color: #000dff;
+    color: white;
+}
+
+.form-footer {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 13px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.form-footer a {
+    color: beige;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form-footer a:hover {
+    text-decoration: none;
+}
+
+.form-footer span {
+    display: block;
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

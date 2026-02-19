@@ -10,6 +10,7 @@ body {
     color: #f8f9fa;
     overflow-x: hidden;
     line-height: 1.6;
+    animation: fadeIn 0.8s ease forwards;
 }
 
 
@@ -19,6 +20,7 @@ body {
     align-items: center;
     padding: 20px 8%;
     width: 100%;
+
 }
 
 .logo {
@@ -41,7 +43,7 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(68, 117, 242, 0.3);
 }
-  
+
 .menu {
     display: flex;
     gap: 30px;
@@ -58,6 +60,7 @@ body {
 .menu a.active,
 .menu a:hover {
     color: #4475F2;
+
 }
 
 .btn-login {
@@ -287,5 +290,17 @@ body {
     .book {
         width: 110px;
         height: 160px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
