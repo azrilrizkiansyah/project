@@ -16,10 +16,11 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: ;
     align-items: center;
     padding: 20px 8%;
     width: 100%;
+    background-color: #4475F2;
 
 }
 
@@ -29,6 +30,10 @@ body {
     gap: 12px;
     font-weight: 800;
     font-size: 24px;
+}
+.logo span,menu{
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -46,21 +51,22 @@ body {
 
 .menu {
     display: flex;
-    gap: 30px;
+    background-color: #4475F2;
+    flex-direction: column;
 
 }
 
 .menu a {
+    display: flex;
     text-decoration: none;
     color: #ffffff;
     font-weight: 500;
     transition: 0.3s;
+    flex-direction: column;
 }
-
-.menu a.active,
-.menu a:hover {
-    color: #4475F2;
-
+.active{
+    background-color:blue ;
+    border-color: #f8f9fa;
 }
 
 .btn-login {
@@ -110,6 +116,8 @@ body {
 }
 
 .btn-primary {
+    display: block;
+    justify-content: end;
     background: #4475F2;
     color: white;
     padding: 15px 30px;
@@ -239,10 +247,17 @@ body {
     margin: 50px;
     display: flex;
     justify-content: center;
+    background-color: #4475F2;
+    width: 100%;
 }
 
 .tag span {
     font: bold;
+}
+.layanan{
+    background-color: #1e1b1b;
+    padding: 80px 8%;
+    text-align: center;
 }
 
 

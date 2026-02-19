@@ -5,21 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>landing page</title>
-    
+
     <link rel="stylesheet" href="page.css">
 </head>
 
 <body>
 
     <div class="container">
+
         <div class="logo">
             <div class="logo-icon">R</div>
-            <span>ReadYY</span>
-        </div>
-        <div class="menu">
-            <a href="#fitur" class="active" >Fitur</a>
-            <a href="#">Layanan</a>
-            <a href="#">Ulasan</a>
+            <span>ReadYY</span><br>
+            <div class="menu">
+                <button onclick="menu.hidden^=1">uu</button>
+                <ul id="menu" hidden>
+                    <a href="#fitur" class="active">Fitur</a>
+                    <a href="#" class="active">Layanan</a>
+                    <a href="#" class="active">Ulasan</a>
+                </ul>
+            </div>
         </div>
         <a href="login.html" class="btn-login">👤 Masuk</a>
     </div>
@@ -66,11 +70,21 @@
                     depan.</p>
             </div>
         </div>
-        
+
     </section>
-        <div class="footer-bottom">
-            <p>&copy; 2026 azuriru. Dibuat untuk kemajuan literasi.</p>
+    <section class="layanan">
+        <div class="layanan-header">
+            <span class="tag">Layanan</span>
         </div>
+        <div class="layanan-card">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ab illo dicta aliquid exercitationem recusandae
+            deserunt accusantium placeat. Tenetur saepe dolorem incidunt dicta nihil dolorum explicabo animi, mollitia
+            laboriosam dolor.
+        </div>
+    </section>
+    <div class="footer-bottom">
+        <p>&copy; 2026 azuriru. Dibuat untuk kemajuan literasi.</p>
+    </div>
 </body>
 
 </html>
