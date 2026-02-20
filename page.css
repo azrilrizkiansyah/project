@@ -31,6 +31,12 @@ body {
 nav {
     height: 15px;
     width: 35px;
+
+}
+
+.nav h1 {
+    background-color: #335bc7;
+    color: #f8f9fa;
 }
 
 .logo {
@@ -319,25 +325,28 @@ nav {
     transition: 0.3s;
     box-shadow: 0 10px 20px rgba(68, 117, 242, 0.2);
 }
+
 .ulasan-card:hover {
     transform: translateY(-10px);
-    background: #335bc7; 
+    background: #335bc7;
 }
+
 .ulasan-card strong {
     display: block;
     font-size: 1.1rem;
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
 }
 
 .rating {
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
     font-size: 0.9rem;
 }
 
 .ulasan-card p {
     line-height: 1.5;
-    opacity: 0.9; 
+    opacity: 0.9;
 }
+
 .layanan-card {
     box-shadow: 0 10px 20px rgba(68, 117, 242, 0.2);
 }
