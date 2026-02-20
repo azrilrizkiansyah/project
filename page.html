@@ -12,20 +12,22 @@
 <body>
 
     <div class="container">
-
+        <div class="menu">
+            <button onclick="menu.hidden^=1" class="nav">
+                <h1>≡</h1>
+            </button>
+            <ul id="menu" hidden>
+                <a href="#fitur" class="active">Fitur</a>
+                <a href="#layanan" class="active">Layanan</a>
+                <a href="#" class="active">Ulasan</a>
+            </ul>
+        </div>
         <div class="logo">
             <div class="logo-icon">R</div>
-            <span>ReadYY</span><br>
-            <div class="menu">
-                <button onclick="menu.hidden^=1">uu</button>
-                <ul id="menu" hidden>
-                    <a href="#fitur" class="active">Fitur</a>
-                    <a href="#" class="active">Layanan</a>
-                    <a href="#" class="active">Ulasan</a>
-                </ul>
-            </div>
+            <span>eadYY</span><br>
         </div>
-        <a href="login.html" class="btn-login">👤 Masuk</a>
+        <a href="login.html" class="btn-login">👤Masuk</a>
+
     </div>
 
     <section class="menu2">
@@ -72,19 +74,66 @@
         </div>
 
     </section>
-    <section class="layanan">
+    <section class="layanan" id="layanan">
         <div class="layanan-header">
             <span class="tag">Layanan</span>
         </div>
         <div class="layanan-card">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ab illo dicta aliquid exercitationem recusandae
             deserunt accusantium placeat. Tenetur saepe dolorem incidunt dicta nihil dolorum explicabo animi, mollitia
-            laboriosam dolor.
+            laboriosam dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati modi dolore cum? Soluta
+            quos non, suscipit debitis inventore officia dolor iusto pariatur repellat eum. Hic consectetur eligendi
+            temporibus sunt. Neque.
         </div>
-    </section>
-    <div class="footer-bottom">
-        <p>&copy; 2026 azuriru. Dibuat untuk kemajuan literasi.</p>
-    </div>
+        <section class="ulasan" id="ulasan">
+            <div class="ulasan-header">
+                <span class="tag">Testimoni</span>
+                <h2>Apa Kata Pembaca?</h2>
+            </div>
+
+            <div class="ulasan-grid">
+                <div class="ulasan-card">
+                    <strong>👤Ahmad Fauzi</strong>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p>"Koleksi buku digitalnya sangat lengkap! Membaca referensi untuk skripsi jadi jauh lebih mudah
+                        tanpa harus keluar rumah."</p>
+                </div>
+
+                <div class="ulasan-card">
+                    <strong>👤Larasati</strong>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p>"Sistem peminjamannya sangat praktis. Notifikasi pengembalian bukunya sangat membantu saya
+                        menghindari denda."</p>
+                </div>
+
+                <div class="ulasan-card">
+                    <strong>👤Ibu Sarah</strong>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>"Web yang sangat ramah untuk anak-anak. Anak saya jadi lebih rajin membaca karena tampilan e-book
+                        nya menarik."</p>
+                </div>
+
+                <div class="ulasan-card">
+                    <strong>👤Dr. Gunawan</strong>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p>"Fitur pencarian judul dan penulis sangat akurat. Saya bisa menemukan buku langka yang sudah lama
+                        saya cari di sini."</p>
+                </div>
+
+                <div class="ulasan-card">
+                    <strong>👤Kevin</strong>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>"Aksesnya cepat dan ringan di HP. Sangat nyaman untuk membaca artikel atau jurnal saat sedang di
+                        perjalanan."</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 azuriru. Dibuat untuk kemajuan literasi.</p>
+        </div>
 </body>
 
 </html>

@@ -87,6 +87,11 @@ input {
     text-decoration: none;
     font-weight: 600;
 }
+.lupa a{
+    text-decoration: none;
+    color:#ffffff;
+    font-weight: bold;
+}
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
