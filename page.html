@@ -7,26 +7,34 @@
     <title>landing page</title>
 
     <link rel="stylesheet" href="page.css">
+
 </head>
 
 <body>
-
     <div class="container">
-        <div class="menu">
-            <button onclick="menu.hidden^=1" class="nav">
-                <h1>≡</h1>
-            </button>
-            <ul id="menu" hidden>
-                <a href="#fitur" class="active">Fitur</a>
-                <a href="#layanan" class="active">Layanan</a>
-                <a href="#ulasan" class="active">Ulasan</a>
-            </ul>
-        </div>
         <div class="logo">
             <div class="logo-icon">R</div>
-            <span>eadYY</span><br>
+            <span>eadYY</span>
         </div>
-        <a href="login.html" class="btn-login">👤Masuk</a>
+
+        <div class="nav-actions">
+
+            <div class="menu">
+                <button onclick="document.getElementById('menu').toggleAttribute('hidden')" class="btn-menu nav">
+                    <h1>≡</h1>
+                </button>
+                <ul id="menu" hidden>
+                    <li><a href="login.html" class="active"> Masuk</a></li>
+                    <li><a href="#fitur" class="active">Fitur</a></li>
+                    <li><a href="#layanan" class="active">Layanan</a></li>
+                    <li><a href="#ulasan" class="active">Ulasan</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
 
     </div>
 
@@ -35,7 +43,9 @@
             <h1>Cari & ulas <br> buku <span class="highlight">favoritmu</span> <br> tanpa ribet</h1>
             <p>Mulailah perjalanan literasi yang belum pernah ada sebelumnya dengan aplikasi perpustakaan revolusioner
                 kami! Menghadirkan pengalaman mulus yang melampaui batas tradisional.</p>
-            <button class="btn-primary">Mulai sekarang &rarr;</button>
+            <a href="login.html" class="btn">
+                <button class="btn-primary">Mulai sekarang</button>
+            </a>
         </div>
 
         <div class="gambar">
@@ -78,12 +88,17 @@
         <div class="layanan-header">
             <span class="tag">Layanan</span>
         </div>
-        <div class="layanan-card">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ab illo dicta aliquid exercitationem recusandae
-            deserunt accusantium placeat. Tenetur saepe dolorem incidunt dicta nihil dolorum explicabo animi, mollitia
-            laboriosam dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati modi dolore cum? Soluta
-            quos non, suscipit debitis inventore officia dolor iusto pariatur repellat eum. Hic consectetur eligendi
-            temporibus sunt. Neque.
+        <div class="layanan-grid">
+            <div class="layanan-card">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ab illo dicta aliquid exercitationem
+                recusandae
+                deserunt accusantium placeat. Tenetur saepe dolorem incidunt dicta nihil dolorum explicabo animi,
+                mollitia
+                laboriosam dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati modi dolore cum?
+                Soluta
+                quos non, suscipit debitis inventore officia dolor iusto pariatur repellat eum. Hic consectetur eligendi
+                temporibus sunt. Neque.
+            </div>
         </div>
         <section class="ulasan" id="ulasan">
             <div class="ulasan-header">
@@ -134,6 +149,7 @@
         <div class="footer-bottom">
             <p>&copy; 2026 azuriru. Dibuat untuk kemajuan literasi.</p>
         </div>
+        
 </body>
 
 </html>
