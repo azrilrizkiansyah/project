@@ -14,7 +14,7 @@ body {
     color: #f8f9fa;
     overflow-x: hidden;
     line-height: 1.6;
-    animation: fadeIn 0.8s ease forwards;
+    
 }
 
 
@@ -24,9 +24,23 @@ body {
     align-items: center;
     padding: 20px 8%;
     width: 100%;
-
-
+    background-color:#335bc7;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: all 0.3s ease;
 }
+
+
+
+.container.scrolled {
+    background-color: #264a9e;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    padding: 15px 8%;
+    z-index: 99999;
+}
+
 
 .nav-actions {
     display: flex;
@@ -46,11 +60,12 @@ body {
     padding: 15px;
     border-radius: 10px;
     list-style: none;
-    z-index: 100;
+    z-index: 100000;
     min-width: 120px;
     background-color: #4475F2;
     margin: 8px;
 }
+
 
 #menu a {
     color: rgb(255, 255, 255);
@@ -145,6 +160,7 @@ ul {
     padding: 60px 8% 100px;
     gap: 50px;
     min-height: 80vh;
+    padding-top: 100px;
 }
 
 .menu-content {
@@ -335,7 +351,9 @@ ul {
     display: flex;
     justify-content: center;
     width: 100%;
+    text-align: center;
 }
+
 
 .tag span {
     font: bold;
@@ -373,28 +391,23 @@ ul {
     box-shadow: 0 10px 20px rgba(68, 117, 242, 0.2);
 }
 
-/* --- Overlay Pop-up (Latar Belakang) --- */
+
 .click-overlay {
     display: none;
-    /* Sembunyi secara default */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    /* Gelap transparan */
     backdrop-filter: blur(8px);
-    /* Efek blur pada konten belakang */
     z-index: 9999;
     justify-content: center;
     align-items: center;
 }
 
-/* --- Kotak Login (Class 'click') --- */
 .click {
     background-color: #2a2626;
-    /* Senada dengan background body kamu */
     width: 90%;
     max-width: 400px;
     padding: 30px;
@@ -417,10 +430,8 @@ ul {
     }
 }
 
-/* Judul & Input */
 .click h2 {
     color: #007bff;
-    /* Biru Primary */
     text-align: center;
     margin-bottom: 25px;
 }
@@ -449,7 +460,6 @@ ul {
     border-color: #007bff;
 }
 
-/* Tombol Login Biru Primary */
 .button-primary {
     width: 100%;
     padding: 12px;
@@ -467,7 +477,7 @@ ul {
     background-color: #0056b3;
 }
 
-/* Tombol Close (X) */
+
 .close-click {
     position: absolute;
     top: 15px;
@@ -547,6 +557,14 @@ ul {
 
 
 @media (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
 
     .menu-content h1 {
         font-size: 28px;
@@ -555,13 +573,39 @@ ul {
     .gambar {
         transform: scale(0.75);
         height: 350px;
+        max-width: 100%;
     }
 
     .book {
         width: 110px;
         height: 160px;
     }
+
+    .fitur {
+        padding: 40px 5%;
+    }
+
+    .layanan {
+        padding: 40px 5%;
+    }
+
+    .ulasan {
+        padding: 40px 5%;
+    }
+
+    .footer-bottom {
+        margin: 30px 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer-bottom p {
+        text-align: center;
+        width: 100%;
+    }
 }
+
+
 
 @keyframes fadeIn {
     from {

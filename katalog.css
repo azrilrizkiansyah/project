@@ -162,7 +162,6 @@
     font-size: 14px;
 }
 
-/* Category Section */
 .categories {
     padding: 30px 8%;
     background: #2d2a2a;
@@ -187,7 +186,7 @@
     border-color: #4475F2;
 }
 
-/* Pagination */
+
 .pagination {
     display: flex;
     justify-content: center;
@@ -210,4 +209,89 @@
 
 .page-btn:hover, .page-btn.active {
     background: #4475F2;
+}
+
+@media (max-width: 768px) {
+    .catalog-header {
+        padding: 30px 5%;
+    }
+    
+    .catalog-header h1 {
+        font-size: 28px;
+    }
+    
+    .search-filter {
+        padding: 20px 5%;
+    }
+    
+    .search-box {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    
+    .categories {
+        padding: 20px 5%;
+        gap: 10px;
+    }
+    
+    .category-tag {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    
+    .books-section {
+        padding: 30px 5%;
+    }
+    
+    .books-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+    
+    .book-cover {
+        height: 200px;
+    }
+    
+    .book-info {
+        padding: 15px;
+    }
+    
+    .book-title {
+        font-size: 14px;
+    }
+    
+    .book-author {
+        font-size: 12px;
+    }
+    
+    .pagination {
+        padding: 20px 5%;
+        flex-wrap: wrap;
+    }
+    
+    .page-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .books-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .book-cover {
+        height: 180px;
+    }
+    
+    .filter-group {
+        justify-content: center;
+    }
+    
+    .filter-btn {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
 }
