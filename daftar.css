@@ -1,7 +1,7 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -10,55 +10,51 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     padding: 20px;
 }
 
-.login {
+.daftar {
     background-color: #1A2744;           
     border: 1px solid rgba(201, 168, 76, 0.3);
+    max-width: 400px;
+    width: 100%;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    width: 100%;
-    max-width: 400px;
     animation: fadeIn 0.8s ease forwards;
 }
 
-.login-form h2 {
-    text-align: center;
+.daftar-form h2 {
     color: #C9A84C;                     
-    margin-bottom: 25px;
     font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 .input-group {
-    margin-bottom: 18px;
-}
-
-.input-group label {
-    display: block;
-    font-size: 14px;
+    display: flex;
+    flex-direction: column;
     color: #ffffff;
-    margin-bottom: 6px;
+    padding: 7px;
+    gap: 5px;
 }
 
-input {
-    width: 100%;
+.input-group input {
     height: 45px;
-    padding: 0 15px;
-    border: 1px solid rgba(201, 168, 76, 0.3); 
+    width: 100%;
     border-radius: 6px;
     outline: none;
+    padding: 0 15px;
+    border: 1px solid rgba(201, 168, 76, 0.3); 
     background-color: #111B30;          
     color: #ffffff;
 }
 
-input:focus {
+.input-group input:focus {
     border-color: #C9A84C;              
 }
 
-.button {
+.button-daftar {
     display: block;
     width: 100%;
     height: 45px;
@@ -71,55 +67,29 @@ input:focus {
     border: none;
     cursor: pointer;
     font-size: 15px;
-    background-color: #C9A84C;          
+    background-color: #C9A84C;         
     color: #111B30;                     
+    margin-top: 25px;
     transition: background 0.3s;
 }
-.button1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    width: 100%;
-    height: 40px;
-    border-radius: 8px;
-    border: 1px solid rgba(201, 168, 76, 0.2);
-    background: transparent;
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 14px;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: all 0.2s;
-    text-decoration: none;
+
+.button-daftar:hover {
+    background-color: #E8CC82;         
 }
 
-.button:hover {
-    background-color: #E8CC82;       
-}
-.button1:hover{
-    border-color: rgba(201, 168, 76, 0.5);
-    color: #C9A84C;
-}
-
-.form-footer {
-    margin-top: 25px;
-    padding-top: 15px;
-    border-top: 1px solid rgba(201, 168, 76, 0.2); 
-    text-align: center;
-    font-size: 13px;
-    color: #ffffff;
-}
-
-.form-footer a {
+.sudah-punya-akun a {
     color: #C9A84C;                      
     text-decoration: none;
     font-weight: 600;
 }
 
-.lupa a {
-    text-decoration: none;
-    color: #E8CC82;                     
-    font-weight: bold;
+.sudah-punya-akun {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(201, 168, 76, 0.2);
+    text-align: center;
+    font-size: 13px;
+    color: #ffffff;
 }
 
 @keyframes fadeIn {

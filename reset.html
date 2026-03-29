@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password - ReadYY</title>
+    <link rel="stylesheet" href="reset.css">
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="steps">
+            <div class="step active" id="step1">
+                <span class="step-num">1</span>Identifikasi
+            </div>
+            <div class="step" id="step2">
+                <span class="step-num">2</span>Verifikasi
+            </div>
+            <div class="step" id="step3">
+                <span class="step-num">3</span>Password Baru
+            </div>
+        </div>
+
+        <div class="panels">
+
+            <div class="panel active" id="panel1">
+                <div class="panel-icon">🔑</div>
+                <h2>Lupa Password?</h2>
+                <p>Masukkan email yang terdaftar. Kami akan mengirimkan kode verifikasi.</p>
+
+                <div class="input-group">
+                    <label>Email atau </label>
+                    <div class="input-wrap">
+                        <input type="text" id="email-input" placeholder="contoh@email.com ">
+                        <span class="input-icon">✉</span>
+                    </div>
+                </div>
+
+                <button class="btn-main" onclick="goStep(2)">Kirim Kode Verifikasi</button>
+                <button class="btn-back" onclick="window.location.href='login.html'">← Kembali ke Login</button>
+            </div>
+
+
+            <div class="panel" id="panel2">
+                <div class="panel-icon">📩</div>
+                <h2>Masukkan Kode OTP</h2>
+                <p>Kode 6 digit telah dikirim ke <strong id="target-display">email kamu</strong>. Berlaku selama <strong
+                        id="timer">02:00</strong>.</p>
+
+                <div class="otp-wrap">
+                    <input type="text" maxlength="1" class="otp-box" inputmode="numeric">
+                    <input type="text" maxlength="1" class="otp-box" inputmode="numeric">
+                    <input type="text" maxlength="1" class="otp-box" inputmode="numeric">
+                    <input type="text" maxlength="1" class="otp-box" inputmode="numeric">
+                    <input type="text" maxlength="1" class="otp-box" inputmode="numeric">
+                    <input type="text" maxlength="1" class="otp-box" inputmode="numeric">
+                </div>
+
+                <div class="resend-row">
+                    <span>Tidak menerima kode?</span>
+                    <button onclick="resetTimer()">Kirim ulang</button>
+                </div>
+
+                <button class="btn-main" onclick="goStep(3)">Verifikasi</button>
+                <button class="btn-back" onclick="goStep(1)">← Kembali</button>
+            </div>
+
+            <div class="panel" id="panel3">
+                <div class="panel-icon">🔒</div>
+                <h2>Buat Password Baru</h2>
+                <p>Password baru harus berbeda dari password sebelumnya.</p>
+
+                <div class="input-group">
+                    <label>Password Baru</label>
+                    <div class="input-wrap">
+                        <input type="password" id="pw1" placeholder="Minimal 8 karakter" oninput="checkStrength()">
+                        <button class="toggle-pw" type="button" onclick="togglePw('pw1', this)">👁</button>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Konfirmasi Password</label>
+                        <div class="input-wrap">
+                            <input type="password" id="pw2" placeholder="Ulangi password baru">
+                            <button class="toggle-pw" type="button" onclick="togglePw('pw2', this)">👁</button>
+                        </div>
+                    </div>
+
+                    <button class="btn-main" onclick="doReset()">Simpan Password Baru</button>
+                    <button class="btn-back" onclick="goStep(2)">← Kembali</button>
+                </div>
+
+                <div class="panel" id="panel4">
+                    <div class="success-icon">✓</div>
+                    <h2>Password Berhasil Diubah!</h2>
+                    <p>Password akun <strong id="success-email"></strong> telah diperbarui. Silakan masuk dengan
+                        password
+                        baru kamu.</p>
+
+                    <button class="btn-main" onclick="window.location.href='login.html'">Masuk Sekarang</button>
+                </div>
+
+            </div>
+
+            <hr class="divider">
+            <div class="footer-link" style="padding: 0 30px 24px;">
+                Belum punya akun? <a href="daftar.html">Daftar sekarang</a>
+            </div>
+
+        </div>
+
+        <p class="copyright">&copy; 2026 ReadYY — Dibuat untuk kemajuan literasi.</p>
+
+        <script src="reset.js"></script>
+</body>
+
+</html>

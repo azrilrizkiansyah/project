@@ -1,7 +1,7 @@
 const users = [
-    { username: "admin", password: "123456" },
+    { username: "admin", password: "12345678" },
     { username: "user", password: "password" },
-    { username: "test", password: "test123" }
+    { username: "test", password: "test1234" }
 ];
 
 document.querySelector('.login-form').addEventListener('submit', function (e) {
